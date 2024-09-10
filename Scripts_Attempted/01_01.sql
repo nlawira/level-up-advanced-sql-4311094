@@ -3,7 +3,7 @@ SELECT
   E.title as "Employee Title",
   M.firstName||", "||M.lastName Manager
 FROM Employee E
-LEFT OUTER JOIN Employee M
+LEFT JOIN Employee M
 ON E.managerId = M.employeeId
 ORDER BY E.employeeId DESC;
 
